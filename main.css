@@ -1,0 +1,190 @@
+body{
+    transition: .3s ease all;
+}
+
+body.dark{
+    background-color: #000;
+}
+/* CLASES fullpage.js*/
+#fp-nav ul li a span{
+    background-color: aqua;
+}
+#fp-nav ul li .fp-tooltip{
+    color: aqua;
+}
+
+/* ------------------------------------------- */
+/* Menu de navegacion */
+/* ------------------------------------------- */
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    margin: 0;
+    width: 100%;
+    padding: 10px 20px;
+}
+.nav li , .nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s ease;
+    margin: 10px;
+}
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+.switch {
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: white;
+}
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active{
+    background: orange;
+    color: #000;
+}
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+/* Clases propias*/
+.section.header{
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+}
+.section.header .fas{
+    position: absolute;
+    bottom: 1rem;
+    animation: nextpage 1s ease infinite;
+}
+@keyframes nextpage {
+    0% { transform: translateY(20px);}
+    25% { transform: translateY(0);}
+    100% { transform: translateY(20px);}
+}
+.console{
+    margin: 2rem;
+    height: 4rem;
+    width: 70%;
+}
+.tr.ventana{
+    margin: 4rem 1rem;
+    position: relative;
+}
+.ventana.barra.menu{
+    background-color: #414A4C;
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: .8;
+    border-bottom: 1px solid #FFFFFF;
+}
+.ventana.barra.menu .ventana{
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.ventana.barra.menu .ventana.close{
+    background-color: red;
+    cursor: pointer;
+    left: 1rem;
+}
+.ventana.barra.menu .ventana.resize{
+    background-color: yellow;
+    cursor: pointer;
+    left: 2.2rem;
+}
+.ventana.barra.menu .ventana.minimizar{
+    background-color: green;
+    cursor: pointer;
+    left: 3.4rem;
+}
+.ventana.codespace{
+    height: 10rem;
+    background-color: #414A4C;
+    padding: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.foto{
+    margin: 0 auto 0 auto;
+    border: 1px solid aqua;
+    width: 5rem;
+    height: 10rem;
+}
+.header{
+    position: relative;
+}
+.header .fecha{
+    position: absolute;
+    bottom: 1rem;
+    left: 5rem;
+}
+.header .repo{
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+}
+.fotografia .hilo{
+    background-color: black;
+    position: absolute;
+    top: -5rem;
+    left: 14.5rem;
+    height: 15rem;
+    width: 1rem;
+    animation: colgando 2s ease-in infinite alternate;
+}
+.fotografia .marco{
+    border: 1rem solid red;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0 10% 0 10%;
+}
+@keyframes colgando {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(2deg);}
+    75% { transform: rotate(0deg);}
+    100% { transform: rotate(-2deg);}
+}

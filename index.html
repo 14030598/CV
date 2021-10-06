@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+    <link rel="stylesheet" href="./scss/output.css">
+
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="nav">
+        <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+        </button>
+        <!-- <a href="#inicio" class="saludo">Curriculum Vitae</a> -->
+        <ul id="menu" class="menu">
+            <li data-menuanchor="inicio">
+                <a href="#inicio" class="active">Inicio</a>
+            </li>
+            <li data-menuanchor="skills">
+                <a href="#skills">skills</a>
+            </li>
+            <li data-menuanchor="proyectos">
+                <a href="#proyectos">Proyectos</a>
+            </li>
+            <li data-menuanchor="estudios">
+                <a href="#estudios">estudios</a>
+            </li>
+            <li data-menuanchor="sociales">
+                <a href="#sociales">sociales</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="fullpage">
+        <header class="section header">
+            <section class="fotografia colgante">
+                <div class="hilo"></div>
+                <figure class="marco">
+                    <img src="assets/marco_madera.jpg" alt="">
+                </figure>
+                <figure class="foto">
+                    <img src="assets/manzana.jpg" alt="">
+                </figure>
+            </section>
+            <article class="console">
+                <article class="titulo">
+                    <section class="ventana barra menu">
+                        <div class="ventana close"></div>
+                        <div class="ventana resize"></div>
+                        <div class="ventana minimizar"></div>
+                        Acerca de mi
+                    </section>
+                </article>
+                <section class="codespace">
+                    <h1> $ <span class="autor"></span></h1>
+                    <h3> $ <span class="presentacion"></span></h3>
+                </section>
+            </article>
+            <!-- <section class="repo">Github</section> -->
+            <span>
+                <a href="#skills">
+                    <i class="fas fa-angle-down"></i>
+                </a>    
+            </span>
+        </header>
+
+        <section class="section skills">
+            <img data-src="assets/Cactus.jpg">
+            <section>Conocimientos</section>
+        </section>
+        <section class="section proyectos">
+            proyectos
+        </section>
+        <section class="section estudios">
+            Estudios
+            <figure>
+                <img src="assets/arbol.png" alt="">
+            </figure>
+        </section>
+        <footer class="section sociales">
+            <h2>Footer</h2>
+            
+        </footer>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/097a00ad7c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
